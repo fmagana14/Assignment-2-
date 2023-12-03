@@ -5,7 +5,24 @@
     </head>
     <body>
         <!-- Your HTML code goes here! -->
-
+        <h1>Calculator</h1>
+        <form action="/calculator_results" method="post">
+            <label for="num1">Enter first number:</label>
+            <input type="text" name="num1" required>
+            <br>
+            <label for="num2">Enter second number:</label>
+            <input type="text" name="num2" required>
+            <br>
+            <label for="operator">Choose an operator:</label>
+            <select name="operator" required>
+                <option value="+">Add</option>
+                <option value="-">Subtract</option>
+                <option value="*">Multiply</option>
+                <option value="/">Divide</option>
+            </select>
+            <br>
+            <button type="submit">Calculate</button>
+        </form>
 
 
 

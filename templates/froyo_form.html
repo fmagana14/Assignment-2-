@@ -4,12 +4,16 @@
         <title>Froyo Ordering</title>
     </head>
     <body>
-        <form action="/froyo_results" method="GET">
-            What is your favorite Fro-Yo flavor? <br/>
-            <input type="text" name="flavor"><br/>
-            <input type="submit" value="Submit!">
-        </form>
-
+        <h2>Choose Your Fro-Yo</h2>
+            <form action="/froyo_results" method="post">
+                <label for="flavor">Choose a flavor:</label>
+                <input type="text" id="flavor" name="flavor" required>
+                <br>
+                <label for="toppings">Choose your toppings:</label>
+                <input type="text" id="toppings" name="toppings" required>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
 
 
 
